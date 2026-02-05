@@ -1,0 +1,16 @@
+header{
+    background-color: var(--background-secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 48px;
+}
+
+nav{
+    display: none;
+}
+
+.logo{
+    width: 68px;
+    height: 64px;
+}
