@@ -7,9 +7,13 @@ header {
   position: relative;
 }
 
-.logo {
+.logo-mobile {
   width: 68px;
   height: 64px;
+}
+
+.logo {
+  display: none;
 }
 
 nav {
@@ -50,5 +54,24 @@ input[type="checkbox"]:checked ~ nav {
   }
   div {
     width: 467px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-mobile {
+    display: none;
+  }
+  .logo {
+    display: block;
+  }
+  header {
+    padding: 38px 10%;
+  }
+  .list-links li > a:hover {
+    color: var(--primary-color);
+  }
+  .list-links li > a:active {
+    text-decoration: underline;
+    color: var(--background-primary-color);
   }
 }
