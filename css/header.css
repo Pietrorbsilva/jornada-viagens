@@ -6,11 +6,15 @@ header{
     padding: 38px 48px;
 }
 
+.logo{
+    width: 68px;
+    height: 64px;
+}
+
 nav{
     display: none;
 }
 
-.logo{
-    width: 68px;
-    height: 64px;
+input[type="checkbox"]:checked ~ nav{
+    display: block;
 }
