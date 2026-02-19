@@ -46,23 +46,51 @@ body {
   color: var(--text-primary-color);
 }
 
-.offers-title h2 {
-  font-size: 28px;
-  font-weight: var(--title-weight);
-  text-align: center;
+.section-title {
+  width: 100%;
 }
 
-.offers-title hr {
+.section-title h2 {
+  font-size: 32px;
+  font-weight: var(--title-weight);
+  text-align: center;
+  margin-top: 64px;
+}
+
+.section-title hr {
   width: 180px;
   height: 4px;
   background-color: var(--secondary-color);
   border: none;
   margin: 16px auto 32px auto;
 }
+.text-content {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.title-content {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+}
 
 @media screen and (min-width: 768px) {
   .offers-title h2 {
     font-size: 32px;
+  }
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: var(--title-weight);
+    text-align: center;
+    margin-top: 64px;
+  }
+
+  .section-title hr {
+    width: 180px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border: none;
+    margin: 16px auto 32px auto;
   }
 }
 
