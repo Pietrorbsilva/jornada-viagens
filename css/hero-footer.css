@@ -1,0 +1,15 @@
+.hero-bottom-img{
+    background-image: url(../img/hero-footer-img-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-top: 150px;
+}
+
+@media screen and (min-width:768px){
+  .hero-bottom-img{
+    background-image: url(../img/hero-footer-img-pc.png);
+    height: 400px;
+}
+}
