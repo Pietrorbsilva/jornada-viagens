@@ -1,0 +1,110 @@
+.payments {
+  width: 312px;
+  height: 827px;
+  margin: 0 auto 88px auto;
+}
+
+.payment-item .text-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.payment-item > div > h3 {
+  margin-bottom: 24px;
+}
+
+.payment-item > div > p {
+  margin-bottom: 24px;
+}
+
+.img-content {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template-areas: "left right" "bottom bottom";
+  gap: 24px;
+}
+
+.bag {
+  background-image: url(../img/img-japan1-mobile.png);
+  width: 144px;
+  height: 254px;
+}
+
+.passport {
+  background-image: url(../img/img-japan2-mobile.png);
+  width: 144px;
+  height: 254px;
+}
+
+.people {
+  background-image: url(../img/img-japan3-mobile.png);
+  width: 312px;
+  height: 182px;
+}
+
+@media screen and (min-width: 768px) {
+  .payments {
+    width: 648px;
+    height: 697px;
+    margin: 0 auto;
+  }
+  .bag {
+    background-image: url(../img/img-japan1-pc.png);
+    width: 312px;
+    height: 254px;
+  }
+
+  .passport {
+    background-image: url(../img/img-japan2-pc.png);
+    width: 312px;
+    height: 254px;
+  }
+
+  .people {
+    background-image: url(../img/img-japan3-pc.png);
+    width: 648px;
+    height: 182px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments {
+    width: 1200px;
+    height: 583px;
+    margin: 0 auto;
+  }
+
+  .payment-item {
+    display: grid;
+    grid-template: 1fr / 384px 790px;
+    grid-template-areas: "text imgs";
+    gap: 23px;
+  }
+
+  .payment-item .text-content {
+    width: 384px;
+    box-sizing: border-box;
+  }
+
+  .payment-item > div > h3 {
+    width: 314px;
+  }
+
+  .bag {
+    background-image: url(../img/img-japan1-pc.png);
+    width: 383.5px;
+    height: 254px;
+  }
+
+  .passport {
+    background-image: url(../img/img-japan2-pc.png);
+    width: 383.5px;
+    height: 254px;
+  }
+
+  .people {
+    background-image: url(../img/img-japan3-pc.png);
+    width: 790px;
+    height: 182px;
+  }
+}
