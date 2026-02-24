@@ -52,6 +52,11 @@ input[type="checkbox"]:checked ~ nav {
     align-items: center;
     padding: 0;
   }
+
+  .list-links li a{
+    list-style: none;
+  }
+
   div {
     width: 467px;
   }
