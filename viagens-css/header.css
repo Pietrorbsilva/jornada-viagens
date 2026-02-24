@@ -1,30 +1,45 @@
-header{
-    background-color: var(--background-tertiary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 38px 48px;
-    position: relative;
+header {
+  background-color: var(--background-tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 48px;
+  position: relative;
 }
 
-nav{
-    display: none;
+nav {
+  display: none;
 }
 
-input[type="checkbox"]:checked ~ nav{
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 144px;
+  background-color: var(--background-tertiary-color);
+  width: 100%;
+}
+
+.list-links li a {
+  text-decoration: none;
+  color: var(--text-secondary-color);
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
     display: block;
-    position: absolute;
-    left: 0px;
-    top: 144px;
-    background-color: var(--background-tertiary-color);
-    width: 100%;
-
+  }
+  label {
+    display: none;
+  }
+  .list-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .list-links li a{
+    display: block;
+  }
 }
-
-.list-links li a{
-    text-decoration: none;
-    color: var(--text-secondary-color);
-    font-size: 24px;
-}
-
-/* arrumar header do site do jornada viagens, e terminar o header do viagens. html para o tablet e pc */
