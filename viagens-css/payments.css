@@ -37,6 +37,7 @@
   border-radius: 8px;
   box-sizing: border-box;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .pay-one {
@@ -60,11 +61,71 @@
   background-position: center top;
 }
 
-.payment-imgs{
-    display: grid;
-    grid-template: 254px 182px / 144px 144px;
-    grid-template-areas: "left right" "bottom bottom";
-    gap: 24px;
+.payment-imgs {
+  display: grid;
+  grid-template: 254px 182px / 1fr 1fr;
+  grid-template-areas: "left right" "bottom bottom";
+  gap: 24px;
 }
 
-/* nao colocar margin-bottom no payment-imgs, colocar no flex na div article imgs, fazer tablet e pc */
+@media screen and (min-width: 768px) {
+  .payments {
+    height: 779px;
+  }
+
+  .payment-button {
+    display: none;
+  }
+  .pay-one {
+    background-image: url(../img/grid-img-japan-tablet.png);
+    width: 312px;
+    height: 254px;
+    background-position: center top;
+  }
+
+  .pay-two {
+    background-image: url(../img/grid-img-japan2-tablet.png);
+    width: 312px;
+    height: 254px;
+    background-position: center left;
+  }
+
+  .pay-three {
+    background-image: url(../img/grid-img-japan3-tablet.png);
+    width: 648px;
+    height: 182px;
+    background-position: center top;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments {
+    height: 583px;
+  }
+  .pay-one {
+    background-image: url(../img/grid-img-japan-tablet.png);
+    width: 383.5px;
+    height: 254px;
+    background-position: center top;
+  }
+
+  .pay-two {
+    background-image: url(../img/grid-img-japan2-tablet.png);
+    width: 383.5px;
+    height: 254px;
+    background-position: center left;
+  }
+
+  .pay-three {
+    background-image: url(../img/grid-img-japan3-tablet.png);
+    width: 790px;
+    height: 182px;
+    background-position: center top;
+  }
+  .flex-payment {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 23px;
+  }
+}
