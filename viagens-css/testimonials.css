@@ -1,5 +1,4 @@
 .testimonials {
-  width: 312px;
   height: 829px;
   margin: 88px auto 0 auto;
 }
@@ -57,32 +56,27 @@
 
 @media screen and (min-width: 768px) {
   .testimonials {
-    width: 768px;
-    width: 661px;
-    margin: 0 auto;
+    height: 661px;
   }
   .testimonials-items {
     width: 648px;
     height: 570px;
   }
 }
-
 @media screen and (min-width: 1440px) {
-    .testimonials {
-      width: 100%;
-      max-width: 1200px;
-      margin: 120px auto 0 auto;
-    }
-
-    .testimonials-items {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .testimonial {
-      flex: 1;
-      max-width: 384px;
-    }
+  .testimonials {
+    height: 345px;
   }
+
+  .testimonials-items {
+    height: 222px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .testimonial {
+    flex: 1;
+  }
+}
