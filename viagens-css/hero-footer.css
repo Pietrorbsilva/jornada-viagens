@@ -1,6 +1,8 @@
 .hero-bottom {
   width: 100%;
   height: 400px;
+  padding: 0;
+  margin: 0;
 }
 
 .hero-bottom-img {
