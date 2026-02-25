@@ -1,0 +1,104 @@
+.excursion-content header {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.excursion-img {
+  background-image: url(../img/img-tokyo.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 360px;
+}
+
+.excursion-img-osaka {
+  background-image: url(../img/img-osaka-mobile.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 360px;
+}
+
+.excursion-content h3 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 24px 0;
+}
+
+.excursion-content p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.excursion-button {
+  width: 312px;
+  height: 64px;
+  background-color: var(--secondary-color);
+  padding: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+footer .button {
+  text-decoration: none;
+  color: var(--text-secondary-color);
+  font-size: 20px;
+  font-weight: var(--title-weight);
+  line-height: 32px;
+}
+
+.osaka {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .excursion-button {
+    width: 280px;
+  }
+  .excursion-img {
+    background-image: url(../img/img-tokyo-tablet.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+  }
+
+  .excursion-img-osaka {
+    background-image: url(../img/img-osaka-tablet.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+   .excursion {
+    width: 1200px;
+  }
+  .excursion-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .excursion-content {
+    width: 588px;
+  }
+  .excursion-img {
+    background-image: url(../img/img-tokyo-pc.jpg);
+    width: 100%;
+    height: 452px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .excursion-img-osaka {
+    background-image: url(../img/img-osaka-pc.jpg);
+    width: 100%;
+    height: 452px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+  }
+}
