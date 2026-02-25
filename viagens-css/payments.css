@@ -1,0 +1,131 @@
+.payments {
+  height: 963px;
+}
+
+.payment-content header {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.payment-content header h3:first-child {
+  font-size: 40px;
+  font-weight: var(--title-weight);
+}
+
+.payment-content header h3:last-child {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin-bottom: 24px;
+}
+
+.payment-content p {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.payment-button {
+  width: 312px;
+  height: 64px;
+  background-color: var(--secondary-color);
+  padding: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.pay-one {
+  background-image: url(../img/grid-img-japan.png);
+  width: 144px;
+  height: 254px;
+  background-position: center top;
+}
+
+.pay-two {
+  background-image: url(../img/grid-img-japan2.png);
+  width: 144px;
+  height: 254px;
+  background-position: center left;
+}
+
+.pay-three {
+  background-image: url(../img/grid-img-japan3.png);
+  width: 312px;
+  height: 182px;
+  background-position: center top;
+}
+
+.payment-imgs {
+  display: grid;
+  grid-template: 254px 182px / 1fr 1fr;
+  grid-template-areas: "left right" "bottom bottom";
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .payments {
+    height: 779px;
+  }
+
+  .payment-button {
+    display: none;
+  }
+  .pay-one {
+    background-image: url(../img/grid-img-japan-tablet.png);
+    width: 312px;
+    height: 254px;
+    background-position: center top;
+  }
+
+  .pay-two {
+    background-image: url(../img/grid-img-japan2-tablet.png);
+    width: 312px;
+    height: 254px;
+    background-position: center left;
+  }
+
+  .pay-three {
+    background-image: url(../img/grid-img-japan3-tablet.png);
+    width: 648px;
+    height: 182px;
+    background-position: center top;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments {
+    height: 583px;
+  }
+  .pay-one {
+    background-image: url(../img/grid-img-japan-tablet.png);
+    width: 383.5px;
+    height: 254px;
+    background-position: center top;
+  }
+
+  .pay-two {
+    background-image: url(../img/grid-img-japan2-tablet.png);
+    width: 383.5px;
+    height: 254px;
+    background-position: center left;
+  }
+
+  .pay-three {
+    background-image: url(../img/grid-img-japan3-tablet.png);
+    width: 790px;
+    height: 182px;
+    background-position: center top;
+  }
+  .flex-payment {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 23px;
+  }
+}
