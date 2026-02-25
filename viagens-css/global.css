@@ -60,6 +60,14 @@ hr {
   margin: 16px auto 32px auto;
 }
 
+.title h2 {
+  font-size: 32px;
+  font-weight: var(--title-weight);
+  text-align: center;
+  margin-top: 64px;
+}
+
+
 @media screen and (min-width: 768px){
   section{
     width: 648px;
