@@ -8,17 +8,22 @@
   </head>
   <body>
     <header>
-      <a href="index.html">
-        <picture>
-          <source
-            srcset="img/bussola-desktop.png"
-            media="(min-width: 1024px)"
-          />
-          <img src="img/bussola.png" alt="Bússola da Jornada Viagens" />
-        </picture>
+      <a href="index.html" title="Página Inicial">
+        <img
+          class="logo-mobile"
+          src="img/bussola.png"
+          alt="Bussola preta da jornada viagens"
+        />
+        <img
+          class="logo"
+          src="img/bussola-desktop.png"
+          alt="Bussola preta da jornada viagens"
+        />
       </a>
-      <div>
-        <label for="imenu"><img src="img/menu.png" alt="Icone de menu" /></label>
+      <div class="list-links-div">
+        <label for="imenu"
+          ><img src="img/menu.png" alt="Icone de menu"
+        /></label>
         <input type="checkbox" id="imenu" hidden />
         <nav>
           <ul class="list-links">
@@ -29,5 +34,16 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="hero-img">
+          <div class="hero-content">
+            <h1>Conheça o Japão!</h1>
+            <hr />
+            <p>A Jornada possui o pacote perfeito para seu estilo e orçamento! Conheça as belas paisagens e a  cultura milenar deste belo país!</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
